@@ -11,4 +11,9 @@ app.get('/helloworld', (request: Request, response: Response) => {
     response.status(200).json({message: `Hello ${name}!!`});
 });
 
+app.post('/helloworld',(request: Request, response: Response) => {
+    const name = request.body['name'] || 'world';
+    response.status(200).json({message: `Hello ${name}!!`});
+})
+
 export const APIService: express.Express = app;
