@@ -59,3 +59,6 @@ typings/
 
 # exclude generated lib folder
 functions/lib
+
+# firebase db key
+firebase-key.json
